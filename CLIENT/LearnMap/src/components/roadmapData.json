@@ -1,0 +1,200 @@
+{
+  "topic": "Full Stack Web Development",
+  "shortDescription": "A beginner-friendly roadmap to learn how to build, deploy, and maintain modern web applications using HTML, CSS, JavaScript, Node.js, Express, MongoDB, and React.",
+  "estimatedTotalHours": 120,
+  "modules": [
+    {
+      "title": "Foundations of the Web",
+      "summary": "Understand how the web works and learn the basic building blocks — HTML, CSS, and JavaScript.",
+      "order": 1,
+      "estimatedHours": 20,
+      "lessons": [
+        {
+          "title": "How the Web Works",
+          "description": "Learn about clients, servers, HTTP, browsers, and DNS.",
+          "order": 1,
+          "estimatedHours": 2,
+          "resources": [
+            { "title": "MDN: How the Web Works", "url": "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works", "type": "article" }
+          ],
+          "status": "not-started"
+        },
+        {
+          "title": "HTML Essentials",
+          "description": "Learn about tags, elements, structure, and semantic HTML.",
+          "order": 2,
+          "estimatedHours": 4,
+          "resources": [
+            { "title": "FreeCodeCamp: HTML Basics", "url": "https://www.freecodecamp.org/learn/", "type": "course" }
+          ],
+          "status": "not-started"
+        },
+        {
+          "title": "CSS Fundamentals",
+          "description": "Learn about styling, box model, positioning, and responsive design.",
+          "order": 3,
+          "estimatedHours": 6,
+          "resources": [
+            { "title": "CSS Tricks Guide", "url": "https://css-tricks.com/guides/", "type": "article" }
+          ],
+          "status": "not-started"
+        },
+        {
+          "title": "Intro to JavaScript",
+          "description": "Get familiar with variables, data types, loops, functions, and DOM manipulation.",
+          "order": 4,
+          "estimatedHours": 8,
+          "resources": [
+            { "title": "JavaScript.info - Fundamentals", "url": "https://javascript.info/first-steps", "type": "article" }
+          ],
+          "status": "not-started"
+        }
+      ]
+    },
+    {
+      "title": "Frontend Development with React",
+      "summary": "Learn React.js to build dynamic, interactive, and component-based user interfaces.",
+      "order": 2,
+      "estimatedHours": 30,
+      "lessons": [
+        {
+          "title": "React Basics & JSX",
+          "description": "Learn how to create components, manage props, and use JSX syntax.",
+          "order": 1,
+          "estimatedHours": 5,
+          "resources": [
+            { "title": "React Docs: Main Concepts", "url": "https://react.dev/learn", "type": "documentation" }
+          ],
+          "status": "not-started"
+        },
+        {
+          "title": "State & Props",
+          "description": "Understand state management and how to pass data between components.",
+          "order": 2,
+          "estimatedHours": 5,
+          "resources": [
+            { "title": "Scrimba React Course", "url": "https://scrimba.com/learn/react", "type": "course" }
+          ],
+          "status": "not-started"
+        },
+        {
+          "title": "React Router & Hooks",
+          "description": "Implement navigation with React Router and learn key hooks like useState and useEffect.",
+          "order": 3,
+          "estimatedHours": 6,
+          "resources": [
+            { "title": "React Router Docs", "url": "https://reactrouter.com/en/main", "type": "documentation" }
+          ],
+          "status": "not-started"
+        },
+        {
+          "title": "Mini Frontend Project",
+          "description": "Build a small React app such as a to-do list or notes app.",
+          "order": 4,
+          "estimatedHours": 14,
+          "resources": [
+            { "title": "YouTube: React Todo App Tutorial", "url": "https://www.youtube.com/watch?v=hQAHSlTtcmY", "type": "video" }
+          ],
+          "status": "not-started"
+        }
+      ]
+    },
+    {
+      "title": "Backend Development with Node.js and Express",
+      "summary": "Learn how to create server-side applications and REST APIs.",
+      "order": 3,
+      "estimatedHours": 30,
+      "lessons": [
+        {
+          "title": "Node.js Fundamentals",
+          "description": "Understand the Node.js runtime, npm, and basic file operations.",
+          "order": 1,
+          "estimatedHours": 5,
+          "resources": [
+            { "title": "Node.js Docs: Getting Started", "url": "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs", "type": "documentation" }
+          ],
+          "status": "not-started"
+        },
+        {
+          "title": "Express.js Basics",
+          "description": "Set up basic routing, middleware, and API endpoints.",
+          "order": 2,
+          "estimatedHours": 8,
+          "resources": [
+            { "title": "Express.js Guide", "url": "https://expressjs.com/en/starter/installing.html", "type": "documentation" }
+          ],
+          "status": "not-started"
+        },
+        {
+          "title": "Connecting MongoDB",
+          "description": "Use Mongoose to connect to MongoDB and perform CRUD operations.",
+          "order": 3,
+          "estimatedHours": 8,
+          "resources": [
+            { "title": "Mongoose Docs: Getting Started", "url": "https://mongoosejs.com/docs/", "type": "documentation" }
+          ],
+          "status": "not-started"
+        },
+        {
+          "title": "REST API Project",
+          "description": "Build a REST API for a notes or blog app.",
+          "order": 4,
+          "estimatedHours": 9,
+          "resources": [
+            { "title": "YouTube: Build REST API with Node & Express", "url": "https://www.youtube.com/watch?v=Oe421EPjeBE", "type": "video" }
+          ],
+          "status": "not-started"
+        }
+      ]
+    },
+    {
+      "title": "Full Stack Integration & Deployment",
+      "summary": "Combine frontend and backend, and deploy your project online.",
+      "order": 4,
+      "estimatedHours": 40,
+      "lessons": [
+        {
+          "title": "Connecting Frontend and Backend",
+          "description": "Learn to connect your React frontend with your Express backend using Axios and APIs.",
+          "order": 1,
+          "estimatedHours": 10,
+          "resources": [
+            { "title": "Axios Guide", "url": "https://axios-http.com/docs/intro", "type": "documentation" }
+          ],
+          "status": "not-started"
+        },
+        {
+          "title": "Authentication & Authorization",
+          "description": "Implement JWT-based login and protect routes.",
+          "order": 2,
+          "estimatedHours": 8,
+          "resources": [
+            { "title": "JWT Auth Tutorial", "url": "https://www.digitalocean.com/community/tutorials/nodejs-jwt-expressjs", "type": "article" }
+          ],
+          "status": "not-started"
+        },
+        {
+          "title": "Deployment (Render / Vercel)",
+          "description": "Learn how to deploy your backend and frontend to hosting platforms.",
+          "order": 3,
+          "estimatedHours": 8,
+          "resources": [
+            { "title": "Render Deployment Docs", "url": "https://render.com/docs/deploy-node-express-app", "type": "documentation" }
+          ],
+          "status": "not-started"
+        },
+        {
+          "title": "Final Capstone Project",
+          "description": "Build and deploy a full-stack project such as a blog or task manager app.",
+          "order": 4,
+          "estimatedHours": 14,
+          "resources": [
+            { "title": "YouTube: Full Stack MERN Tutorial", "url": "https://www.youtube.com/watch?v=7CqJlxBYj-M", "type": "video" }
+          ],
+          "status": "not-started"
+        }
+      ]
+    }
+  ],
+  "tags": ["web development", "frontend", "backend", "react", "node", "mern"]
+}
