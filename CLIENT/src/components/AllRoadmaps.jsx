@@ -8,6 +8,7 @@ export default function AllRoadmaps() {
   const [roadmaps, setRoadmaps] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const apiBase = import.meta.env.VITE_API_BASE_URL ;
 
   useEffect(() => {
     const fetchRoadmaps = async () => {
@@ -21,7 +22,7 @@ export default function AllRoadmaps() {
       }
 
       try {
-        const res = await axios.get('http://localhost:3000/api/roadmap/allroadmap', {
+        const res = await axios.get(apiBase + '/roadmap/allroadmap', {
           headers: { Authorization: token }
         });
         setRoadmaps(Array.isArray(res.data) ? res.data : []);

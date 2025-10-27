@@ -19,7 +19,7 @@ export default function ViewRoadmap() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const apiBase = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000/api';
+  const apiBase = import.meta.env.VITE_API_BASE_URL ;
 
   useEffect(() => {
     let cancelled = false;

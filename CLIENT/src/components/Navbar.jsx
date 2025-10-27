@@ -21,7 +21,7 @@ const LearmapNavbar = ({ onLogout, token }) => {
   return (
     <Navbar bg="primary" variant="dark" expand="lg" sticky='top'>
       <Container>
-        <Navbar.Brand href="/">LearnMap</Navbar.Brand>
+        <Navbar.Brand>LearnMap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto align-items-center">
