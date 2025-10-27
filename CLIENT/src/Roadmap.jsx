@@ -26,7 +26,7 @@ function Roadmap({ roadmapData }) {
     // Clear any transient messages and navigate home for a fresh generation
     setSaveError(null);
     setSaveSuccess(null);
-    navigate('/');
+    navigate('/generate');
   };
 
   const handleSave = async () => {
@@ -34,7 +34,8 @@ function Roadmap({ roadmapData }) {
     setSaveError(null);
     setSaveSuccess(null);
     try {
-      const res = await axios.post('http://localhost:3000/api/save', roadmapData);
+      const res = await axios.post(import.meta.env.VITE_API_BASE_URL + '/roadmap/save', roadmapData,
+        { headers: { "Authorization" : localStorage.getItem('token') } });
       setSaveSuccess('Roadmap saved successfully');
     } catch (err) {
       const msg = err?.response?.data?.error || err.message || 'Unknown error';

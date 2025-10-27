@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import User from './users.js';
 
 // 1. Define the innermost sub-document: ResourceSchema
 const ResourceSchema = new mongoose.Schema({
@@ -36,11 +37,11 @@ const ModuleSchema = new mongoose.Schema({
 // 4. Define the main Roadmap document: RoadmapSchema
 const RoadmapSchema = new mongoose.Schema({
   // *** REQUIRED LINK TO USER ***
- /* userId: { 
+ userId: { 
     type: mongoose.Schema.Types.ObjectId, // Link the roadmap to a specific user
     ref: 'User', // Assuming you have a 'User' model
     required: true 
-  }, */
+  }, 
   
   // AI Generated Top-Level Fields
   topic: { type: String, required: true },

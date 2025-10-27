@@ -1,17 +1,17 @@
-const { User } = require("../Models/users");
-const bcrypt = require(`bcrypt`);
-const jwt = require(`jsonwebtoken`);
+import User  from "../Models/users.js";
+import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
 
 
 function isStringInvalid(string) {
     return string === undefined || string.length === 0;
 }
 
-const generateAccessToken = (id, name, premiumUser) => {
-    return jwt.sign({ userId: id, name, premiumUser }, process.env.JWT_SECRET_KEY);
+const generateAccessToken = (id, name) => {
+    return jwt.sign({ userId: id, name }, process.env.JWT_SECRET_KEY);
 }
 
-exports.createUser = async (req, res) => {
+export async function createUser(req, res) {
     try {
         const { name, email, password } = req.body;
         
@@ -58,7 +58,7 @@ exports.createUser = async (req, res) => {
     }
 }
 
-exports.loginUser = async (req, res) => {
+export async function loginUser(req, res) {
     try {
         const { email, password } = req.body;
         
@@ -90,7 +90,7 @@ exports.loginUser = async (req, res) => {
             });
         }
 
-        const token = generateAccessToken(user.id, user.name, user.premiumUser);
+        const token = generateAccessToken(user.id, user.name);
         
         return res.status(200).json({
             success: true,

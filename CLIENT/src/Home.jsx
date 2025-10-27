@@ -13,7 +13,7 @@ function Home({ onGenerate }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await onGenerate(formData);
-    navigate('/roadmap');
+    navigate('/view-roadmap');
   };
 
   const handleChange = (e) => {

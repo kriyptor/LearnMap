@@ -5,6 +5,8 @@ import cors from "cors";
 import systemPromptGen from "./utils/system-prompt-generator.js";
 import Roadmap from "./Models/roadmap.js";
 import express from "express";
+import userRoutes from "./Routes/user-routes.js";
+import roadmapRoutes from "./Routes/roadmap-routes.js";
 
 dotenv.config();
 
@@ -77,7 +79,11 @@ async function main(topic, difficulty, outcome) {
 
 //main();
 
-app.post('/api/generate', async (req, res) => {
+app.use('/api/user', userRoutes);
+app.use('/api/roadmap', roadmapRoutes);
+
+
+/*app.post('/api/generate', async (req, res) => {
   try {
     const { topic, difficulty, outcome } = req.body;
 
@@ -114,12 +120,8 @@ app.post('/api/save', async (req, res) => {
     console.error("Error in /api/save:", error);
     res.status(500).json({ error: 'An error occurred' });
   }
-});
+}); */
 
-
-
-//app.use('/user', userRouter);
-//app.use('/expense', expenseRouter);
 
 
 //connect the database

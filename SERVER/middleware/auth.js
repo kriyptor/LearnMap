@@ -1,8 +1,8 @@
-const jwt = require(`jsonwebtoken`);
-const { User } = require(`../Models/users`);
+import jwt from 'jsonwebtoken';
+import  User from '../Models/users.js';
 
 
-exports.authenticate = async (req, res, next) =>{
+export default async function authenticate (req, res, next){
     try {
         const token = req.header(`Authorization`);
 
